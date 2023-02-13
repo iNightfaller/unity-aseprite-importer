@@ -57,8 +57,8 @@ namespace AsepriteImporter.Importers {
             var atlas = GenerateAtlas(frames);
             try {
                 File.WriteAllBytes(filePath, atlas.EncodeToPNG());
-                AssetDatabase.SaveAssets();
-                AssetDatabase.Refresh();
+                //AssetDatabase.SaveAssets();
+                //AssetDatabase.Refresh();
             } catch (Exception e) {
                 Debug.LogError(e.Message);
             }
